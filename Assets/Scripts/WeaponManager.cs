@@ -15,15 +15,15 @@ public class WeaponManager : MonoBehaviour
         {
             if (instance == null)
             {
-                instance = GameObject.FindAnyObjectByType<WeaponManager>();
+                instance = GameObject.FindObjectOfType<WeaponManager>();
             }
             return instance;
         }
     }
 
-    public void DropWeapon(string obName)
+    public void DropWeapon(string obName, Vector3 pos)
     {
-        GameObject ob = Instantiate(obj, Vector3.zero, Quaternion.identity);
+        GameObject ob = Instantiate(obj, pos, Quaternion.identity);
         ob.name = obName;
     }
 }
