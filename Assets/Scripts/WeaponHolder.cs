@@ -14,7 +14,7 @@ public class WeaponHolder : MonoBehaviour
 
     private void Update()
     {
-
+        sr.sprite = weaponData.sprite;
     }
 }
 
