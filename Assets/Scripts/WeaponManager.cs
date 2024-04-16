@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class WeaponManager : MonoBehaviour
 {
-    public GameObject obj;
+    public GameObject player;
     private static WeaponManager instance;
 
     public static WeaponManager Instance
@@ -19,11 +19,5 @@ public class WeaponManager : MonoBehaviour
             }
             return instance;
         }
-    }
-
-    public void DropWeapon(string obName, Vector3 pos)
-    {
-        GameObject ob = Instantiate(obj, pos, Quaternion.identity);
-        ob.name = obName;
     }
 }
