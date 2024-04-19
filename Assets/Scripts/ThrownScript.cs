@@ -13,15 +13,14 @@ public class ThrownScript : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         rb.rotation = rotation;
+        StartCoroutine("SlowDown");
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
-        vel = Vector2.right * power;
+        vel = transform.right * power;
         rb.velocity = vel;
-        rb.angularVelocity = power;
     }
-
     private IEnumerator SlowDown()
     {
         while (true)
@@ -29,7 +28,7 @@ public class ThrownScript : MonoBehaviour
             yield return new WaitForSeconds(0.05f);
             if (power > 0)
             {
-                power = power * 0.9f;
+                power--;
             }
         }
     }
