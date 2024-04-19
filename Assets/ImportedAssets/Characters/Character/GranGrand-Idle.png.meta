@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 817f0a5f9c3cbd9488fed2cf8633577d
+guid: e9d6c6560c25df446ba8bc0b40aae015
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GranGrand-Walk_0
+      name: GranGrand-Idle_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba803079d0f92d04790d825c07b2654e
-      internalID: 334249145
+      spriteID: 09edbea1ddf3b0d43a42861a3595f114
+      internalID: 1153117905
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GranGrand-Walk_1
+      name: GranGrand-Idle_1
       rect:
         serializedVersion: 2
         x: 64
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16c67df4560a8b143b62c0a7022bf758
-      internalID: -1615760961
+      spriteID: 7b3b3e65b8caaaf4fbb8c0c4e5105aa8
+      internalID: -584088531
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GranGrand-Walk_2
+      name: GranGrand-Idle_2
       rect:
         serializedVersion: 2
         x: 128
@@ -179,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82748dd87dddb474d949538b6203d631
-      internalID: 1514835408
+      spriteID: 35c5bd5fc2ec6b24d9d4bb8e8bd07041
+      internalID: -1090606494
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GranGrand-Walk_3
+      name: GranGrand-Idle_3
       rect:
         serializedVersion: 2
         x: 192
@@ -200,92 +200,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a15b950aa57058c4a973701d7c3bad4b
-      internalID: -40653939
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GranGrand-Walk_4
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 19e13c6a5ca33024580e02613facb6c8
-      internalID: 736880874
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GranGrand-Walk_5
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 848bb8f32e71d4449aff75fdfe7a676b
-      internalID: -248162048
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GranGrand-Walk_6
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 02f9fd4aef8516e40be55a5379e39f16
-      internalID: 200328041
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GranGrand-Walk_7
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dd6e765449ef9a845b04194ada465231
-      internalID: 2112614369
+      spriteID: 3add4d23cf2ff8a4f90cff17dfd8a7dc
+      internalID: 708711581
       vertices: []
       indices: 
       edges: []
@@ -301,14 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      GranGrand-Walk_0: 334249145
-      GranGrand-Walk_1: -1615760961
-      GranGrand-Walk_2: 1514835408
-      GranGrand-Walk_3: -40653939
-      GranGrand-Walk_4: 736880874
-      GranGrand-Walk_5: -248162048
-      GranGrand-Walk_6: 200328041
-      GranGrand-Walk_7: 2112614369
+      GranGrand-Idle_0: 1153117905
+      GranGrand-Idle_1: -584088531
+      GranGrand-Idle_2: -1090606494
+      GranGrand-Idle_3: 708711581
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
