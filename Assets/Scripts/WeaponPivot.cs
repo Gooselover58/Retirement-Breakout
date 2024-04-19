@@ -24,7 +24,7 @@ public class WeaponPivot : MonoBehaviour
         Vector2 mouse = cam.ScreenToWorldPoint(Input.mousePosition);
         Vector2 dir = rb.position - mouse;
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg - 90f;
-        rb.rotation = (wh.weaponState == WeaponState.Charging) ? angle : angle + wh.throwPower;
+        rb.rotation = (wh.weaponState == WeaponState.Charging) ? angle + wh.throwPower : angle;
         rb.position = (Vector2)player.transform.position + ogOffset;
     }
 }

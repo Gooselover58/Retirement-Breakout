@@ -7,6 +7,7 @@ using UnityEngine;
 public class WeaponManager : MonoBehaviour
 {
     public GameObject player;
+    [SerializeField] GameObject thrownOb;
     private static WeaponManager instance;
 
     public static WeaponManager Instance
@@ -19,5 +20,10 @@ public class WeaponManager : MonoBehaviour
             }
             return instance;
         }
+    }
+
+    public void SpawnThrown(Weapon weapon)
+    {
+
     }
 }

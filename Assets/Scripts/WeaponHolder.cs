@@ -26,11 +26,15 @@ public class WeaponHolder : MonoBehaviour
     {
         while (true)
         {
-            if (weaponState == WeaponState.Charging)
+            if (weaponState == WeaponState.Charging && throwPower < 90)
             {
-                throwPower++;
+                throwPower += 2;
             }
-            yield return new WaitForSeconds(0.1f);
+            else if (weaponState == WeaponState.Idle)
+            {
+                throwPower = 0;
+            }
+            yield return new WaitForSeconds(0.01f);
         }
     }
 }
