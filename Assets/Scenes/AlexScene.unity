@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 46933522}
   - component: {fileID: 46933521}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Characters_0 (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -301,7 +301,7 @@ GameObject:
   m_Component:
   - component: {fileID: 80062483}
   - component: {fileID: 80062482}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Characters_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -385,7 +385,7 @@ GameObject:
   m_Component:
   - component: {fileID: 84285594}
   - component: {fileID: 84285593}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Characters_0 (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -556,7 +556,7 @@ GameObject:
   - component: {fileID: 145772736}
   - component: {fileID: 145772735}
   - component: {fileID: 145772737}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -859,7 +859,7 @@ GameObject:
   m_Component:
   - component: {fileID: 277951102}
   - component: {fileID: 277951101}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Characters_0 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -943,7 +943,7 @@ GameObject:
   m_Component:
   - component: {fileID: 434545011}
   - component: {fileID: 434545010}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Characters_0 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1027,7 +1027,7 @@ GameObject:
   m_Component:
   - component: {fileID: 491108336}
   - component: {fileID: 491108335}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Characters_0 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1111,7 +1111,7 @@ GameObject:
   m_Component:
   - component: {fileID: 525977393}
   - component: {fileID: 525977392}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Characters_0 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1195,7 +1195,7 @@ GameObject:
   m_Component:
   - component: {fileID: 540953517}
   - component: {fileID: 540953516}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Characters_0 (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1637,7 +1637,7 @@ GameObject:
   m_Component:
   - component: {fileID: 679766363}
   - component: {fileID: 679766362}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Characters_0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1705,7 +1705,7 @@ Transform:
   m_GameObject: {fileID: 679766361}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.45, y: 2.17, z: 0}
+  m_LocalPosition: {x: -6.39, y: 2.17, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1722,7 +1722,7 @@ GameObject:
   - component: {fileID: 682772862}
   - component: {fileID: 682772861}
   - component: {fileID: 682772863}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1785,6 +1785,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3caeb7d8692a164e890df6d0742fcb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  angle: 0
 --- !u!1 &734936849
 GameObject:
   m_ObjectHideFlags: 0
@@ -1986,7 +1987,7 @@ GameObject:
   - component: {fileID: 893868341}
   - component: {fileID: 893868342}
   - component: {fileID: 893868343}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeaponHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2075,6 +2076,7 @@ MonoBehaviour:
   weaponData: {fileID: 11400000, guid: 6c44b7242b9bab745a31074ea237f9b2, type: 2}
   weaponState: 0
   throwPower: 0
+  wp: {fileID: 0}
 --- !u!1 &914786295
 GameObject:
   m_ObjectHideFlags: 0
@@ -2253,7 +2255,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1101063642}
   - component: {fileID: 1101063641}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Characters_0 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2589,7 +2591,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1188443573}
   - component: {fileID: 1188443574}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2849,7 +2851,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1227987900}
   - component: {fileID: 1227987899}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Characters_0 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3017,7 +3019,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1298705980}
   - component: {fileID: 1298705979}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Characters_0 (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3220,6 +3222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 145772732}
+  thrownOb: {fileID: 3442022342555038797, guid: 047d42dbd6bd5014ebb8a7ca469557b8, type: 3}
 --- !u!1 &1491868418
 GameObject:
   m_ObjectHideFlags: 0
@@ -3230,7 +3233,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1491868420}
   - component: {fileID: 1491868419}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Characters_0 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15212,7 +15215,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1931690929}
   - component: {fileID: 1931690930}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15457,7 +15460,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2084998772}
   - component: {fileID: 2084998771}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Characters_0 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15625,7 +15628,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2145835861}
   - component: {fileID: 2145835860}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Characters_0 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

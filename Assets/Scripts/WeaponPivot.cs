@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using UnityEngine;
 
 public class WeaponPivot : MonoBehaviour
@@ -9,6 +10,7 @@ public class WeaponPivot : MonoBehaviour
     private Camera cam;
     private WeaponHolder wh;
     private Vector2 ogOffset;
+    public float angle;
 
     void Start()
     {
@@ -16,6 +18,7 @@ public class WeaponPivot : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         cam = Camera.main;
         wh = transform.GetChild(1).GetComponent<WeaponHolder>();
+        wh.wp = this;
         ogOffset = transform.position - player.position;
     }
 
@@ -23,7 +26,7 @@ public class WeaponPivot : MonoBehaviour
     {
         Vector2 mouse = cam.ScreenToWorldPoint(Input.mousePosition);
         Vector2 dir = rb.position - mouse;
-        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg - 90f;
+        angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg - 90f;
         rb.rotation = (wh.weaponState == WeaponState.Charging) ? angle + wh.throwPower : angle;
         rb.position = (Vector2)player.transform.position + ogOffset;
     }

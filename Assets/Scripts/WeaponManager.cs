@@ -22,8 +22,11 @@ public class WeaponManager : MonoBehaviour
         }
     }
 
-    public void SpawnThrown(Weapon weapon)
+    public void SpawnThrown(Weapon weapon, float rotation, float power)
     {
-
+        GameObject newThrown = Instantiate(thrownOb, player.transform.position, Quaternion.identity);
+        ThrownScript ts = newThrown.GetComponent<ThrownScript>();
+        ts.rotation = rotation;
+        ts.power = power;
     }
 }

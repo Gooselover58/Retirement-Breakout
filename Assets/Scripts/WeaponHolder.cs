@@ -8,6 +8,7 @@ public class WeaponHolder : MonoBehaviour
     [SerializeField] Weapon weaponData;
     public WeaponState weaponState;
     public float throwPower;
+    public WeaponPivot wp;
 
     private void Start()
     {
@@ -20,6 +21,10 @@ public class WeaponHolder : MonoBehaviour
     {
         sr.sprite = weaponData.sprite;
         weaponState = (Input.GetKey(KeyCode.Mouse0)) ? WeaponState.Charging : WeaponState.Idle;
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            WeaponManager.Instance.SpawnThrown(weaponData, wp.angle, throwPower);
+        }
     }
 
     private IEnumerator ChargePower()
