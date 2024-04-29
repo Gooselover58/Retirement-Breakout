@@ -6,9 +6,9 @@ public class ThrownScript : MonoBehaviour
 {
     private Rigidbody2D rb;
     private SpriteRenderer sr;
-    public float power;
-    public float rotation;
-    public Weapon weaponData;
+    [HideInInspector] public float power;
+    [HideInInspector] public float rotation;
+    [HideInInspector] public Weapon weaponData;
 
     private void Awake()
     {

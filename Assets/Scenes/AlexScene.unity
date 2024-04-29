@@ -717,6 +717,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gottaGoFast: 10
+  anim: {fileID: 0}
 --- !u!1 &200081066
 GameObject:
   m_ObjectHideFlags: 0
@@ -2073,7 +2074,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 868aab75fb95b4b4db7fb52e03cfba78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponData: {fileID: 11400000, guid: b7c4b58f12c87834cb58424c40510ecf, type: 2}
+  weaponData:
+  - {fileID: 11400000, guid: 6c44b7242b9bab745a31074ea237f9b2, type: 2}
+  - {fileID: 11400000, guid: 8351e10538516504eb92b5b6014e064a, type: 2}
+  - {fileID: 11400000, guid: b7c4b58f12c87834cb58424c40510ecf, type: 2}
+  - {fileID: 11400000, guid: 6c44b7242b9bab745a31074ea237f9b2, type: 2}
   weaponState: 0
   throwPower: 0
   wp: {fileID: 0}
