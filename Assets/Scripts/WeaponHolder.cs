@@ -20,10 +20,14 @@ public class WeaponHolder : MonoBehaviour
     private void Update()
     {
         sr.sprite = weaponData.sprite;
-        weaponState = (Input.GetKey(KeyCode.Mouse0)) ? WeaponState.Charging : WeaponState.Idle;
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            weaponState = WeaponState.Charging;
+        }
+        else if (Input.GetKeyUp(KeyCode.Mouse0) && weaponState == WeaponState.Charging)
         {
             WeaponManager.Instance.SpawnThrown(weaponData, wp.angle, throwPower);
+            weaponState = WeaponState.Idle;
         }
     }
 

@@ -26,6 +26,7 @@ public class WeaponManager : MonoBehaviour
     {
         GameObject newThrown = Instantiate(thrownOb, player.transform.position, Quaternion.identity);
         ThrownScript ts = newThrown.GetComponent<ThrownScript>();
+        ts.weaponData = weapon;
         ts.rotation = rotation;
         ts.power = power;
     }

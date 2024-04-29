@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7fd58fad3d49a5d4c9cdffe7ca526ef7, type: 3}
-  m_Name: GameBoard
+  m_Name: Weight
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: aac2a154241550e4b8d0e836355e0de8, type: 3}
-  damage: 7
-  weight: 6
+  sprite: {fileID: 21300000, guid: c04cf468a8199784fa91da76d0631154, type: 3}
+  damage: 15
+  weight: 10
