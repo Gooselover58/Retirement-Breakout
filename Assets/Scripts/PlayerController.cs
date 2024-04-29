@@ -7,12 +7,12 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
 
     [SerializeField] float gottaGoFast;
-    [SerializeField] Animator anim;
+    private Animator anim;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-
+        anim = GetComponent<Animator>();
     }
 
 
