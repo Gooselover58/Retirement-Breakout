@@ -20,12 +20,19 @@ public class WeaponHolder : MonoBehaviour
 
     private void Update()
     {
-        sr.sprite = (weaponData[0] == null) ? null : weaponData[0].sprite;
-        if (Input.GetKeyDown(KeyCode.Mouse0) && weaponData[0] != null)
+        if (HasWeapon())
+        {
+            sr.sprite = weaponData[0].sprite;
+        }
+        else
+        {
+            sr.sprite = null;
+        }
+        if (Input.GetKeyDown(KeyCode.Mouse0) && HasWeapon())
         {
             weaponState = WeaponState.Charging;
         }
-        else if (Input.GetKeyUp(KeyCode.Mouse0) && weaponState == WeaponState.Charging && weaponData[0] != null)
+        else if (Input.GetKeyUp(KeyCode.Mouse0) && weaponState == WeaponState.Charging && HasWeapon())
         {
             WeaponManager.Instance.SpawnThrown(weaponData[0], wp.angle, throwPower);
             weaponData[0] = null;
@@ -52,7 +59,7 @@ public class WeaponHolder : MonoBehaviour
 
     private void SortWeapons()
     {
-        for (int i = 0; i < weaponData.Count(); ++i)
+        for (int i = 0; i < weaponData.Count(); i++)
         {
             if (i >= weaponData.Count() - 1)
             {
@@ -63,6 +70,18 @@ public class WeaponHolder : MonoBehaviour
                 weaponData[i] = weaponData[i + 1];
             }
         }
+    }
+
+    private bool HasWeapon()
+    {
+        if (weaponData.Count > 0)
+        {
+            if (weaponData[0] != null)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 }
 
