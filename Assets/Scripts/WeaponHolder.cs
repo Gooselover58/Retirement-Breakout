@@ -7,9 +7,10 @@ public class WeaponHolder : MonoBehaviour
 {
     private SpriteRenderer sr;
     [SerializeField] List<Weapon> weaponData;
-    public WeaponState weaponState;
-    public float throwPower;
-    public WeaponPivot wp;
+    [HideInInspector] public WeaponState weaponState;
+    [HideInInspector] public float throwPower;
+    [HideInInspector] public WeaponPivot wp;
+    [SerializeField] float pickUpRange;
 
     private void Start()
     {
@@ -38,6 +39,10 @@ public class WeaponHolder : MonoBehaviour
             weaponData[0] = null;
             SortWeapons();
             weaponState = WeaponState.Idle;
+        }
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            PickUpWeapons();
         }
     }
 
@@ -82,6 +87,24 @@ public class WeaponHolder : MonoBehaviour
             }
         }
         return false;
+    }
+
+    private void PickUpWeapons()
+    {
+        Collider2D[] weapons = Physics2D.OverlapCircleAll(transform.position, pickUpRange);
+        foreach (Collider2D col in weapons)
+        {
+            if (col.GetComponent<ThrownScript>() != null)
+            {
+                weaponData.Add(col.GetComponent<ThrownScript>().weaponData);
+                Destroy(col.gameObject);
+            }
+        }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.DrawWireSphere(transform.position, pickUpRange);
     }
 }
 

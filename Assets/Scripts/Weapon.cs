@@ -6,6 +6,5 @@ using UnityEngine;
 public class Weapon : ScriptableObject
 {
     public Sprite sprite;
-    public float damage;
     public float weight;
 }
