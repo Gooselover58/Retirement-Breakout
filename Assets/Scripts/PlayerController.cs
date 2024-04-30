@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
 
         Vector2 moveIt = new Vector2(x, y) * gottaGoFast;
 
-        anim.SetFloat("X", y);
+        anim.SetFloat("X", x);
         anim.SetFloat("Speed", moveIt.sqrMagnitude);
 
 
